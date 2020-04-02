@@ -19,6 +19,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/*Header*/
+
 header {
     width: 100%;
     background: #000;
@@ -46,9 +48,7 @@ nav {
     text-align: center;
     padding: 12px 16px;
     font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-
+    font-weight: bold;
 }
 
 .topnav a:hover {
@@ -58,6 +58,102 @@ nav {
 .topnav .icon {
     display: none;
 }
+
+/*Main*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .main__welcome {
+    background-color: #000;
+    color: #999999;
+    text-align: center;
+    padding: 200px 0 410px;
+}
+
+main .mycompany {
+    color: #fcac45;
+    font-weight: 700;
+}
+
+main .main__welcome h1 {
+    font-size: 44px;
+    font-weight: 400;
+}
+
+main .main__welcome p {
+    font-size: 20px;
+    color: #c3c3c3;
+}
+
+main .main__welcome p span {
+    font-weight: 700;
+}
+
+.wrapper {
+    width: 76%;
+    margin: 0 auto;
+}
+
+main .main__about {
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+
+main .about__right {
+    margin-left: 175px;
+}
+
+.about__right h1 {
+    display: inline-block;
+    border-bottom: 3px solid #fcac45;
+    padding-bottom: 20px;
+    font-size: 34px;
+}
+
+.about__right p {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 18px;
+    color: #6c6c6c;
+    max-width: 410px;
+}
+
+.about__right li {
+    background: url(img/mark.png) 0px no-repeat;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.mw-100 {
+    min-width: 100%;
+}
+
+.main__about .about__right h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.main__about .about__right h1 span {
+    font-weight: 700;
+}
+
+.main__about .about__right ul {
+    font-style: italic;
+    font-weight: 400;
+    color: #5a5a5a;
+}
+
+.main__about .about__right ul span{
+    font-style: normal;
+    font-weight: 700;
+    color: #5a5a5a;
+}
+
+/*Media*/
 
 @media screen and (max-width: 1200px) {
     nav {
@@ -109,10 +205,40 @@ nav {
         display: block;
         text-align: left;
     }
+
+    main .main__welcome {
+        padding: 50px 0 50px 0;
+    }
+
+    main .main__welcome p {
+        font-size: 14px;
+    }
+
+    main .main__welcome h1 {
+        font-size: 25px;
+    }
+
+    .mw-100 {
+        max-width: 100%;
+    }
+
+    .main__about {
+        flex-direction: column;
+    }
+
+    .about__right {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .about__right li{
+        text-align: left;
 }
-
-
-
+    .about__right h1 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
 
 
 
